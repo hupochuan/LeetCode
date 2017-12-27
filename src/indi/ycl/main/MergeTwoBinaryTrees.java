@@ -20,6 +20,8 @@ public class MergeTwoBinaryTrees {
 		return newNode;
 
 	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
