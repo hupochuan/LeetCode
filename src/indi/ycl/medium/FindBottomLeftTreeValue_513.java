@@ -6,7 +6,7 @@ public class FindBottomLeftTreeValue_513 {
 	TreeNode re=null;
 	int maxHight=0;
 	public int findBottomLeftValue(TreeNode root) {
-		preOrder(root, 0, 0);
+		preOrder(root, 0);
 		return re.val;
 
 	}
