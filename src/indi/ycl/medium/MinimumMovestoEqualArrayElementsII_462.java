@@ -1,19 +1,17 @@
 package indi.ycl.medium;
 
+import java.util.Arrays;
+
 public class MinimumMovestoEqualArrayElementsII_462 {
 	public int minMoves2(int[] nums) {
-		if(nums==null||nums.length==0) return 0;
-		int sum=0;
-		for (int i = 0; i < nums.length; i++) {
-			sum+=nums[i];
+		Arrays.sort(nums);
+		int i=0,j=nums.length-1,sum=0;
+	    while(i<j){
+			sum+=nums[j]-nums[i];
+			i++;
+			j--;
 		}
-		int ave=sum/nums.length;
-		
-		int move=0;
-		for (int i = 0; i < nums.length; i++) {
-			move+=Math.abs(nums[i]-ave);
-		}
-		return move;
+		return sum;
 
 	}
 }
