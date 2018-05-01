@@ -13,9 +13,6 @@ public class MapSumPairs_677 {
 
 	public void insert(String key, int val) {
 		this.map.put(key,val);
-		for (Map.Entry<String, Integer> entry : map.entrySet()) {
-    		System.out.println(entry.getKey()+" "+entry.getValue());
-    	}
 	}
 
 	public int sum(String prefix) {
